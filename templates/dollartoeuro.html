@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Dollar to Euro</title>
-  </head>
-  <body>
+{% extends "layout.html" %}
+{% set active_page ="dollartoeuro" %}
 
+{% block title %}Dollar to Euro{% endblock %}
+
+{% block content %}
     <form action='/response'>
       Convert US dollars to Euros<br>
       <input type="text" name="euro">
       <br><br>
       <input type="submit">
     </form>
+{% endblock %}
 
-  </body>
-</html>
