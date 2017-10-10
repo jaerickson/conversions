@@ -1,1 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dollar to Franc</title>
+  </head>
+  <body>
 
+    <form action='/response'>
+      Convert from US dollars to francs<br>
+      <input type="text" name="franc">
+      <br><br>
+      <input type="submit">
+    </form>
+
+  </body>
+</html>
