@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Dollar to Franc</title>
-  </head>
-  <body>
+{% extends "layout.html" %}
+{% set active_page ="dollartofranc" %}
+
+{% block title %}Page 1{% endblock %}
+
+{% block content %}
 
     <form action='/response'>
       Convert from US dollars to francs<br>
@@ -12,5 +12,5 @@
       <input type="submit">
     </form>
 
-  </body>
-</html>
+{% endblock %}
+
