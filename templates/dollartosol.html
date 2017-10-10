@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Dollar to Sol</title>
-  </head>
-  <body>
+{% extends "layout.html" %}
+{% set active_page ="page1" %}
 
+{% block title %}Dollar to Sol{% endblock %}
+
+{% block content %}
     <form action='/response'>
       Convert US dollars to Soles<br>
       <input type="text" name="sol">
       <br><br>
       <input type="submit">
     </form>
+{% endblock %}
 
-  </body>
-</html>
