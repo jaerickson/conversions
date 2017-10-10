@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Conversions</title>
-  </head>
-  <body>
+{% extends "layout.html" %}
+{% set active_page ="home" %}
 
+{% block title %}Conversions{% endblock %}
+
+{% block content %}
     <form action='/response'>
       <br>
       <input type="text" name="color">
       <br><br>
       <input type="submit">
     </form>
+{% endblock %}
 
-  </body>
-</html>
