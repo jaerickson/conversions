@@ -11,8 +11,8 @@ def render_euro():
     return render_template('dollartoeuro.html')
 
 
-@app.route("/response")
-def render_response():
+@app.route("/responseeuro")
+def render_responseeuro():
     euro = float(request.args['euro'])
     reply = euro*.85   
     return render_template('responseeuro.html', response = reply)
@@ -24,8 +24,8 @@ if __name__=="__main__":
 def render_sol():
     return render_template('dollartosol.html')
 
-@app.route("/response")
-def render_response():
+@app.route("/responsesol")
+def render_responsesol():
     sol = float(request.args['sol'])
     reply = sol*3.26
     return render_template('responsesol.html', response = reply)
@@ -37,8 +37,8 @@ if __name__=="__main__":
 def render_franc():
     return render_template('dollartofranc.html')
 
-@app.route("/response")
-def render_response():
+@app.route("/responsefranc")
+def render_responsefranc():
     franc = float(request.args['franc'])
     reply = franc*.97
     return render_template('responsefranc.html', response = reply)
