@@ -3,11 +3,11 @@ from flask import Flask, url_for, render_template, request
 app = Flask(__name__) 
 
 @app.route("/")
-def render_main():
+def render_home():
      return render_template('home.html')
 
 @app.route("/euro")
-def render_main():
+def render_euro():
     return render_template('dollartoeuro.html')
 
 
@@ -21,7 +21,7 @@ if __name__=="__main__":
     app.run(debug=False, port=54321)
     
 @app.route("/sol")
-def render_main():
+def render_sol():
     return render_template('dollartosol.html')
 
 @app.route("/response")
@@ -34,7 +34,7 @@ if __name__=="__main__":
     app.run(debug=False, port=54321)
     
 @app.route("/franc")
-def render_main():
+def render_franc():
     return render_template('dollartofranc.html')
 
 @app.route("/response")
