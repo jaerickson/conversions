@@ -8,8 +8,8 @@ def render_main():
 
 @app.route("/response")
 def render_response():
-    number = request.args['number']
-    reply = float(request.args['number'])*.85   
+    euro = float(request.args['euro'])
+    reply = euro*.85   
     return render_template('response.html', response = reply)
     
 if __name__=="__main__":
