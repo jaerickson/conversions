@@ -6,7 +6,7 @@ app = Flask(__name__)
 def render_home():
      return render_template('home.html')
 
-@app.route("/euro")
+@app.route("/e")
 def render_euro():
     return render_template('dollartoeuro.html')
 
@@ -20,7 +20,7 @@ def render_responseeuro():
 if __name__=="__main__":
     app.run(debug=False, port=54321)
     
-@app.route("/sol")
+@app.route("/s")
 def render_sol():
     return render_template('dollartosol.html')
 
@@ -33,7 +33,7 @@ def render_responsesol():
 if __name__=="__main__":
     app.run(debug=False, port=54321)
     
-@app.route("/franc")
+@app.route("/f")
 def render_franc():
     return render_template('dollartofranc.html')
 
