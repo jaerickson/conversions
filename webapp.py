@@ -17,7 +17,7 @@ def render_responseeuro():
     reply = euro*.85   
     return render_template('responseeuro.html', response = reply)
     
-if __name__=="__main__":
+if __name__=="__euro__":
     app.run(debug=False, port=54321)
     
 @app.route("/s")
@@ -30,7 +30,7 @@ def render_responsesol():
     reply = sol*3.26
     return render_template('responsesol.html', response = reply)
     
-if __name__=="__main__":
+if __name__=="__sol__":
     app.run(debug=False, port=54321)
     
 @app.route("/f")
@@ -43,5 +43,5 @@ def render_responsefranc():
     reply = franc*.97
     return render_template('responsefranc.html', response = reply)
     
-if __name__=="__main__":
+if __name__=="__franc__":
     app.run(debug=False, port=54321)
