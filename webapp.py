@@ -11,7 +11,7 @@ def render_euro():
     return render_template('dollartoeuro.html')
 
 
-@app.route("/responseeuro.html")
+@app.route("/responseeuro")
 def render_responseeuro():
     euro = float(request.args['euro'])
     reply = euro*.85   
