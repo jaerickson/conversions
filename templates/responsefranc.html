@@ -1,2 +1,8 @@
-{% extends "responselayout.html" %}
-{% block response %} responsefranc {% endblock %}
+
+{% extends "layout.html" %}
+{% block title %} response {% endblock %}
+
+{% block content %} 
+<h1> {{ franc }}dollars is equal to </h1>
+<h2>{{ responsefranc }} francs </h2>
+{% endblock %}
