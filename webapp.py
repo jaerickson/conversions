@@ -15,7 +15,7 @@ def render_euro():
 def render_responseeuro():
     euro = float(request.args['euro'])
     reply = euro*.85   
-    return render_template('responseeuro.html',str(euro), responseeuro = str(reply))
+    return render_template('responseeuro.html',euro = str(euro), responseeuro = str(reply))
     
 if __name__=="__euro__":
     app.run(debug=False, port=54321)
@@ -28,7 +28,7 @@ def render_sol():
 def render_responsesol():
     sol = float(request.args['sol'])
     reply = sol*3.26
-    return render_template('responsesol.html',str(sol), responsesol = str(reply))
+    return render_template('responsesol.html',sol = str(sol), responsesol = str(reply))
     
 if __name__=="__sol__":
     app.run(debug=False, port=54321)
@@ -41,7 +41,7 @@ def render_franc():
 def render_responsefranc():
     franc = float(request.args['franc'])
     reply = franc*.97
-    return render_template('responsefranc.html',str(franc), responsefranc = str(reply))
+    return render_template('responsefranc.html',franc = str(franc), responsefranc = str(reply))
     
 if __name__=="__franc__":
     app.run(debug=False, port=54321)
